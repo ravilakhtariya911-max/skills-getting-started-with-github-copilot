@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mergington High School Activities</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Add pretty styles for participants section */
+      .activity-card {
+        border: 1px solid #d3d3d3;
+        border-radius: 8px;
+        padding: 1em;
+        margin-bottom: 1em;
+        background: #f9f9ff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      }
+      .participants-section {
+        margin-top: 1em;
+        background: #eef6fa;
+        border-radius: 6px;
+        padding: 0.5em 1em;
+      }
+      .participants-section h4 {
+        margin: 0 0 0.5em 0;
+        font-size: 1em;
+        color: #2a5d8f;
+      }
+      .participants-list {
+        margin: 0;
+        padding-left: 1.2em;
+        font-size: 0.98em;
+        color: #444;
+      }
+      .participants-list li {
+        margin-bottom: 0.2em;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -18,6 +49,19 @@
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
+          <!-- Example card structure for reference:
+          <div class="activity-card">
+            <h4>Chess Club</h4>
+            <p>Learn and play chess with friends.</p>
+            <div class="participants-section">
+              <h4>Participants</h4>
+              <ul class="participants-list">
+                <li>alice@mergington.edu</li>
+                <li>bob@mergington.edu</li>
+              </ul>
+            </div>
+          </div>
+          -->
         </div>
       </section>
 
@@ -26,7 +70,12 @@
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="your-email@mergington.edu"
+            />
           </div>
           <div class="form-group">
             <label for="activity">Select Activity:</label>
